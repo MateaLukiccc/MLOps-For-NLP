@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "mlops-nlp"
+version = "0.1.0"
+description = ""
+authors = ["MateaLukiccc <ml20200410@student.fon.bg.ac.rs>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+polars = "^1.17.1"
+ipykernel = "^6.29.5"
+beautifulsoup4 = "^4.12.3"
+tqdm = "^4.67.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
