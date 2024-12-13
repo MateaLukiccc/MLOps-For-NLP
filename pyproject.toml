@@ -11,6 +11,10 @@ polars = "^1.17.1"
 ipykernel = "^6.29.5"
 beautifulsoup4 = "^4.12.3"
 tqdm = "^4.67.1"
+mlflow = "^2.19.0"
+pytorch-lightning = "^2.4.0"
+dagshub = "^0.3.47"
+
 
 
 [build-system]
