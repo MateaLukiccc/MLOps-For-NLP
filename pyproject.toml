@@ -6,8 +6,15 @@ authors = ["MateaLukiccc <ml20200410@student.fon.bg.ac.rs>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = ">=3.11,<3.13"
 polars = "^1.17.1"
 ipykernel = "^6.29.5"
 beautifulsoup4 = "^4.12.3"
 tqdm = "^4.67.1"
+fastapi = "^0.115.6"
+uvicorn = "^0.32.1"
+pytz = "^2024.2"
+torch = "2.2.1"
+pydantic = "^2.10.3"
+numpy = "1.24.0"
+transformers = "^4.47.0"

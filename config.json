@@ -1,0 +1,11 @@
+{
+    "db_config": {
+      "dbname": "${DB_NAME_IMPORT}",
+      "user": "${DB_USER_IMPORT}",
+      "password": "${DB_PASSWORD_IMPORT}",
+      "host": "${DB_HOST_IMPORT}",
+      "port": "${DB_PORT_IMPORT}"
+    },
+    "log_dir": "app/logging"
+  }
+  

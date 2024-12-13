@@ -1,3 +1,5 @@
 .env
 *mlruns
 __pycache__
+logging/
+matea.py
