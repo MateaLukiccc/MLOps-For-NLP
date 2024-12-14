@@ -1,0 +1,7 @@
+services:
+  mlopsfornlp:
+    build: .
+    ports:
+      - "8000:8000"  # Mapira port 8000 iz kontejnera na port 8000 na host mašini
+    environment:
+      - PYTHONUNBUFFERED=1  # Ovaj parametar omogućava bolje logovanje

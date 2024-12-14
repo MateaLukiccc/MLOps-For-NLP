@@ -35,7 +35,6 @@ async def predict(input_data: TextInput):
 def health_status():
     return {"status": "healthy"}
 
-# Start Uvicorn server if script is run directly
 if __name__ == "__main__":
-    setup_logging("logs")  # Set log directory
+    setup_logging("logging") 
     uvicorn.run(app, host="0.0.0.0", port=8000)
