@@ -25,4 +25,4 @@ RUN pip install torch==2.0.1+cpu -f https://download.pytorch.org/whl/cpu/torch_s
 COPY . /app
 
 # Run your app directly
-CMD ["python", "app.py"]
+CMD ["python", "api/app.py"]

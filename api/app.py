@@ -6,10 +6,6 @@ from transformers import pipeline
 from logging_config import setup_logging
 from fastapi import FastAPI, HTTPException
 
-config_path = 'config.json'
-with open(config_path, 'r') as f:
-    config_data = json.load(f)
-
 app = FastAPI()
 
 # Pre-trained model from Hugging Face
