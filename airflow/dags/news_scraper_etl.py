@@ -50,7 +50,7 @@ def news_scraper_etl():
         return res_dict
     
     def get_prediction_from_api(text: str) -> dict:
-        url = "http://localhost:8000/predict" 
+        url = "http://api:8000/predict" 
         headers = {"Content-Type": "application/json"}
         data = {"text": text}
 

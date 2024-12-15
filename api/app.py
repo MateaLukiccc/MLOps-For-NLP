@@ -26,10 +26,9 @@ async def predict(input_data: TextInput):
         logging.error(f"Error in prediction: {str(e)}")
         raise HTTPException(status_code=500, detail="Internal Server Error")
 
-# Health Check
-@app.get("/health_status")
-def health_status():
-    return {"status": "healthy"}
+@app.get("/health")
+def health_check():
+    return {"status": "OK"}
 
 if __name__ == "__main__":
     setup_logging("logging") 
