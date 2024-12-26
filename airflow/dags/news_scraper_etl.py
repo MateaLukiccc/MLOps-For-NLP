@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 import requests
 import csv
 import os
+import string
 
 os.environ['NO_PROXY'] = '*'
 
@@ -37,7 +38,9 @@ def news_scraper_etl():
         while current_item < len(articles):
             article_headline = articles[current_item].title.text
             article_description = ["".join(article_part + " " for article_part in articles[current_item].text.split("\n")[:-5])][0] 
-            res.append(f"{article_headline} {article_description[len(article_headline)+2:]}")
+            full_text = f"{article_headline.lower()} {article_description[len(article_headline)+2:].lower()}"
+            full_text = full_text.translate(str.maketrans('', '', string.punctuation))
+            res.append(full_text)
             current_item += 1
         return res
 
