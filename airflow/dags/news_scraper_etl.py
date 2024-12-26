@@ -88,7 +88,7 @@ def news_scraper_etl():
         for i, (key, value) in enumerate(to_insert.items()):
             text = key.replace(to_replace_first, replacement)
             text = text.replace(to_replace_second, replacement)
-            label = value['prediction'][0]['label']
+            label = value['label']
 
             if i == starting_item:
                 res += f"('{today}', '{i}', '{text}', '{label}')"
