@@ -2,6 +2,11 @@
 
 A comprehensive MLOps pipeline for news classification using transformer models, featuring model training, ONNX optimization, FastAPI deployment, and Airflow-based ETL processes.
 
+## Project Architecture
+
+![image (1)](https://github.com/user-attachments/assets/bc23ff32-e6ca-43dd-8810-983342f9a3a3)
+
+
 ## Project Structure
 
 ```
