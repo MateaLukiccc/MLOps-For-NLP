@@ -6,6 +6,8 @@ A comprehensive MLOps pipeline for news classification using transformer models,
 
 ![image (1)](https://github.com/user-attachments/assets/bc23ff32-e6ca-43dd-8810-983342f9a3a3)
 
+## Airflow task flow overview
+![image](https://github.com/user-attachments/assets/d3148bc5-8851-40ed-abba-f3dc23b2d84e)
 
 ## Project Structure
 
